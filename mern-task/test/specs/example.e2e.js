@@ -1,6 +1,11 @@
 const HomePage = require("../pageobjects/home.page");
 const addCustomerPage = require("../pageobjects/addCustomer.page");
-const SecurePage = require("../pageobjects/secure.page");
+const numberAdd = "+96170123456";
+const nameChange = "Hossam Debyaneeee";
+const addressChange = "DOWNTOWN BEIRUT";
+const nameAdd = "Bob Debyaneeee";
+const addressAdd = "Zahle BEIRUT";
+
 
 describe("HomePage", () => {
   it("Home Page Render ", async () => {
