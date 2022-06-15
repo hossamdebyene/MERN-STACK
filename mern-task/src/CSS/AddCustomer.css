@@ -1,0 +1,19 @@
+.customerForm{
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+  .add{
+    width: 30%;
+    margin-left: 3%;
+  }
+  .verify{
+    width: 30%;
+  }
+  .control{
+    width: 93.5%;
+    text-align: end;
+  }
+  .nopad{
+    padding: 0;
+  }

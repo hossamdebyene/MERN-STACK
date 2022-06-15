@@ -1,0 +1,14 @@
+.customerAdd{
+    width: 100%;
+}
+.aligning{
+    padding: 0;
+}
+.action{
+    width: 100%;
+}
+.actionDiv{
+    display: grid;
+    grid-template-columns: 48.75% 48.75%;
+    column-gap: 1.5%;
+}
