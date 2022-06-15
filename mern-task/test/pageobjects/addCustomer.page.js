@@ -1,5 +1,8 @@
 const Page = require("./page");
 
+const firstCheck = "+96170016054";
+const secondCheck = "+96171112910";
+
 /**
  * sub page containing specific selectors and methods for a specific page
  */
@@ -34,7 +37,7 @@ class AddCustomer extends Page {
     const content = await message.getText();
     if (content === "Number is Registered" || content === "Invalid Number") {
       console.log("JAJAJAJ");
-      this.changeNumber("+96171114552");
+      this.changeNumber(firstCheck);
     }
   }
 
@@ -80,7 +83,7 @@ class AddCustomer extends Page {
     const content = await message.getText();
     if (content === "Invalid Number") {
       console.log("JAJAJAJ");
-      this.changeEditNumber("+96171114525");
+      this.changeEditNumber(secondCheck);
     }
   }
   async EditCustomerFieldss(name, address) {
