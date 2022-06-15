@@ -6,7 +6,6 @@ const addressChange = "DOWNTOWN BEIRUT";
 const nameAdd = "Bob Debyaneeee";
 const addressAdd = "Zahle BEIRUT";
 
-
 describe("HomePage", () => {
   it("Home Page Render ", async () => {
     await HomePage.open();
@@ -19,16 +18,14 @@ describe("going to add Customer Page", () => {
 });
 describe("going to add Customer Page", () => {
   it("Home Page Render ", async () => {
-    await addCustomerPage.addPhoneNumber("+96103009514");
+    console.log(numberAdd);
+    await addCustomerPage.addPhoneNumber(numberAdd);
   });
 });
 
 describe("Submiting the Form of the Customer ", () => {
   it("Customer Form Render ", async () => {
-    await addCustomerPage.addCustomerFields(
-      "Hossam Shoker",
-      "BEIRUT BEIRUT LEBANON QATAR"
-    );
+    await addCustomerPage.addCustomerFields(nameAdd, addressAdd);
   });
 });
 describe("Cancel Delete Customer", () => {
@@ -56,7 +53,7 @@ describe("Editing Customer", () => {
 });
 describe("Editing Customer Fields", () => {
   it("Customer Form Render ", async () => {
-    await addCustomerPage.EditCustomerFieldss("HOssam", "DD");
+    await addCustomerPage.EditCustomerFieldss(nameChange, addressChange);
     await browser.pause(2000);
   });
 });
