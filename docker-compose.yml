@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  server:
+    build: ./server
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+  frontend:
+    depends_on:
+      - server
+    build:
+      context: ./mern-task
+    ports:
+      - 3000:3000
+
+  
